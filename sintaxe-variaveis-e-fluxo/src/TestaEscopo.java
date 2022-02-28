@@ -19,7 +19,7 @@ public class TestaEscopo {
 //		System.out.println(acompanhado);// Não tem valor padrão, é necessário atribuir um valor antes de usar.
 		
 		if (quantidadePessoas >= 2) {
-			acompanhado = true; // Escopo de variável - está variável só existe dentro desse bloco de código
+			acompanhado = true;
 		} else {
 			acompanhado = false;
 		}
