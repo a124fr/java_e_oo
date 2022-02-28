@@ -7,7 +7,7 @@ public class TestaValores {
 		
 		// Tipo Valor - Valor do conteúdo da variável.
 		// Copiando e colando valores, atribuindo valores.
-		// Variáveis guardam valores e não referências
+		// Variáveis guardam valores e não referências do tipo primitivo
 		
 		System.out.println(segundo);
 		
