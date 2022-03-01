@@ -26,6 +26,12 @@ public class CriaConta {
 		segundaConta.agencia = 146;
 		
 		System.out.println("segunda conta está na agencia: " + segundaConta.agencia);
+		
+		if (primeiraConta == segundaConta) {
+			System.out.println("são a mesma conta");
+		} else {
+			System.out.println("contas são diferentes");
+		}
 	}
 
 }
