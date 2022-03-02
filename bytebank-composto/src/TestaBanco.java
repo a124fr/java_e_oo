@@ -11,10 +11,10 @@ public class TestaBanco {
 		contaDoPaulo.deposita(100);
 		
 		// associa o cliente paulo a contaDoPaulo. Composição de objeto 
-		contaDoPaulo.titular = paulo;
+		contaDoPaulo.setTitular(paulo);
 		
-		System.out.println(contaDoPaulo.titular.nome);
-		System.out.println(contaDoPaulo.titular);
+		System.out.println(contaDoPaulo.getTitular().nome);
+		System.out.println(contaDoPaulo.getTitular());
 		System.out.println(paulo);
 		
 	}
