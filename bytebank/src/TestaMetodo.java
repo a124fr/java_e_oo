@@ -23,5 +23,8 @@ public class TestaMetodo {
 
 		System.out.println("Saldo da Conta do Marcela: R$" + contaDaMarcela.saldo);
 		System.out.println("Saldo da Conta do Paulo: R$" + contaDoPaulo.saldo);
+		
+		contaDoPaulo.titular = "paulo silveira";
+		System.out.println(contaDoPaulo.titular);
 	}
 }
