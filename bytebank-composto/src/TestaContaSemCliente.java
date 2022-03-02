@@ -6,7 +6,7 @@ public class TestaContaSemCliente {
 		System.out.println(contaDaMarcela.saldo);
 
 		// java.lang.NullPointerException
-		// necessário instanciar o objeto antes referência nula		
+		// necessário instanciar o objeto antes de usar a referência		
 		//contaDaMarcela.titular.nome = "Marcela";
 		//System.out.println(contaDaMarcela.titular.nome);				
 		System.out.println(contaDaMarcela.titular);
