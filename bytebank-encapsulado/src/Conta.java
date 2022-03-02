@@ -4,6 +4,7 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total = 0;
 	
 	// construtor padrão
 	// Não é um método
@@ -26,6 +27,7 @@ public class Conta {
 		
 		this.agencia = agencia;
 		this.numero = numero;
+		Conta.total++;
 		System.out.println("Estou criando uma conta n°: " + this.numero);
 	}
 
@@ -86,4 +88,8 @@ public class Conta {
 //		}
 //		this.agencia = agencia;
 //	}
+	
+	public static int getTotal() {
+		return Conta.total;
+	}
 }
