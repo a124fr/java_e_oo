@@ -6,9 +6,11 @@ public class TestaBanco {
 		paulo.nome = "Paulo Silveira";
 		paulo.cpf = "222.222.222-22";
 		paulo.profissao = "Programador";
-		
+				
 		Conta contaDoPaulo = new Conta();
 		contaDoPaulo.deposita(100);
+		
+		// associa o cliente paulo a contaDoPaulo. Composição de objeto 
 		contaDoPaulo.titular = paulo;
 		
 		System.out.println(contaDoPaulo.titular.nome);
