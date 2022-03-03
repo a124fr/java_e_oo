@@ -13,7 +13,13 @@ public class Gerente extends Funcionario {
 		return false;
 	}
 	
-//	public double getBonificacao() {
-//		return this.salario;
-//	}
+	// Reescrita de método
+	// A sobrescrita é um conceito importante na herança, pois permite 
+	// redefinir um comportamento previsto na classe mãe através da classe filha
+	// O método possui a mesma assinatura. Isto é, a mesma visibilidade, mesmo retorno, 
+	// mesmo nome e os mesmos parâmetros.
+	@Override
+	public double getBonificacao() {
+		return super.salario;
+	}
 }
