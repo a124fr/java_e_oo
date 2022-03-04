@@ -7,13 +7,10 @@ public class TesteSistema {
 		
 		Administrador adm = new Administrador();
 		adm.setSenha(33333);
-		
-		Designer d = new Designer();
-		d.setSenha(55555);
-		
+				
 		SistemaInterno si = new SistemaInterno();
 		si.autentica(g);
 		si.autentica(adm);
-		si.autentica(d);
+		
 	}
 }

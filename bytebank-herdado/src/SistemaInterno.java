@@ -3,8 +3,8 @@ public class SistemaInterno {
 	
 	private int senha = 2222;
 	
-	public void autentica(Funcionario g) {
-		if (g.autentica(this.senha)) {
+	public void autentica(FuncionarioAutenticavel fa) {
+		if (fa.autentica(this.senha)) {
 			System.out.println("Pode entrar no sistema!");
 		} else {
 			System.out.println("Não pode entrar no sistema!");
