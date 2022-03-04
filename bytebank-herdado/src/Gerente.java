@@ -1,17 +1,18 @@
 // Gerente é um Funcionario, Gerente herda da classe Funcionario
 // A classe filha também é chamada de sub class
 public class Gerente extends Funcionario implements Autenticavel {
-	private int senha;
+	private AutenticacaoUtil autenticador;
 
+	public Gerente() {
+		this.autenticador = new AutenticacaoUtil();
+	}
+	
 	public void setSenha(int senha) {
-		this.senha = senha;
+		this.autenticador.setSenha(senha);
 	}
 
 	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		}
-		return false;
+		return this.autenticador.autentica(senha);
 	}
 	
 	// Reescrita de método ou sobrescrita
