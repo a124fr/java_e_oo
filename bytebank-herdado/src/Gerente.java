@@ -1,6 +1,6 @@
 // Gerente é um Funcionario, Gerente herda da classe Funcionario
 // A classe filha também é chamada de sub class
-public class Gerente extends FuncionarioAutenticavel {
+public class Gerente extends Autenticavel {
 		
 	// Reescrita de método ou sobrescrita
 	// A sobrescrita é um conceito importante na herança, pois permite 
