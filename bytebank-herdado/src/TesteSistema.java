@@ -5,8 +5,8 @@ public class TesteSistema {
 		Cliente cliente = new Cliente();
 		
 		Gerente g = new Gerente();
-//		g.setNome("Nico Steppat");
-//		g.setSalario(2600.0);
+		g.setNome("Nico Steppat");
+		g.setSalario(2600.0);
 		g.setSenha(2222);
 		
 		Administrador adm = new Administrador();
