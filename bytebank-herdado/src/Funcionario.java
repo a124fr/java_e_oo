@@ -1,5 +1,18 @@
 // classe mãe é chamada de super ou base class
 public abstract class Funcionario {
+	private int senha;
+
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+
+	public boolean autentica(int senha) {
+		if (this.senha == senha) {
+			return true;
+		}
+		return false;
+	}
+	
 	private String nome;
 	private String cpf;
 	private double salario;
