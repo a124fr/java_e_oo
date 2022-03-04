@@ -39,3 +39,7 @@ am_enum/.classpath
 am_enum/.gitignore
 am_enum/.project
 am_enum/.settings/org.eclipse.jdt.core.prefs
+java-pilha/.classpath
+java-pilha/.gitignore
+java-pilha/.project
+java-pilha/.settings/org.eclipse.jdt.core.prefs

@@ -6,7 +6,7 @@ public enum Prioridade {
 	
 	private int valor;
 	
-	private Prioridade(int valor) {
+	Prioridade(int valor) {
 		this.valor = valor;
 	}
 	
