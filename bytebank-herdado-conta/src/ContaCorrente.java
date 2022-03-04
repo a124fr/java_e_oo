@@ -1,5 +1,5 @@
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements Tributavel {
 
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
@@ -20,5 +20,10 @@ public class ContaCorrente extends Conta {
 		} else {		
 			System.out.println("Não é possível realizar deposito de valores negativos");
 		}
+	}
+
+	@Override
+	public double getValorImposto() {
+		return super.getSaldo() * 0.01;
 	}
 }
