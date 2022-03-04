@@ -30,6 +30,6 @@ public class Gerente extends Funcionario {
 	// mesmo nome e os mesmos parâmetros.
 	@Override
 	public double getBonificacao() {
-		return super.getBonificacao() + super.getSalario();
+		return super.getSalario();
 	}
 }
