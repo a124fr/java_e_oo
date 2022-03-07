@@ -8,7 +8,7 @@ public class ContaCorrente extends Conta implements Tributavel {
 	// A anotaççao @Override É usada para sobrescrever o método da classe mãe, 
 	// indicando que o método original foi alterado.
 	@Override
-	public void saca(double valor) {
+	public void saca(double valor) throws SaldoInsufienteException {
 		double valorASacar = valor + 0.2;
 		super.saca(valorASacar);
 	}

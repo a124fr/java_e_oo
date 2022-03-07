@@ -1,5 +1,5 @@
 
-public class SaldoInsufienteException extends RuntimeException {
+public class SaldoInsufienteException extends Exception {
 	
 	public SaldoInsufienteException() {}
 	

@@ -33,14 +33,14 @@ public abstract class Conta {
 
 	public abstract void deposita(double valor);
 
-	public void saca(double valor) {
+	public void saca(double valor) throws SaldoInsufienteException {
 		if (this.saldo <= 0 || this.saldo < valor) {
 			throw new SaldoInsufienteException("Saldo Insuficiente -> Saldo R$" + this.saldo + ", Valor a sacar R$" + valor);
 		}		
 		this.saldo -= valor;
 	}
 
-	public void transfere(double valor, Conta destino) {
+	public void transfere(double valor, Conta destino) throws SaldoInsufienteException {
 		this.saca(valor);
 		destino.deposita(valor);			
 	}
