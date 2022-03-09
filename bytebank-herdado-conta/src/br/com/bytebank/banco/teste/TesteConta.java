@@ -1,6 +1,6 @@
 package br.com.bytebank.banco.teste;
 
-//import br.com.bytebank.banco.modelo.ContaCorrente;
+import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 import br.com.bytebank.banco.modelo.SaldoInsufienteException;
 
@@ -11,7 +11,7 @@ public class TesteConta {
 		// classe abstrata não é possível instanciar.
 		//new Conta();
 		
-		br.com.bytebank.banco.modelo.ContaCorrente cc = new br.com.bytebank.banco.modelo.ContaCorrente(111, 111);
+		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100.0);
 		
 		ContaPoupanca cp = new ContaPoupanca(222, 222);
