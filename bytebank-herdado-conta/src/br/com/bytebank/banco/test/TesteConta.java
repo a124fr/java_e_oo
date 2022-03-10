@@ -1,10 +1,10 @@
 package br.com.bytebank.banco.test;
 
-import br.com.bytebank.banco.especial.ContaEspecial;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 import br.com.bytebank.banco.modelo.SaldoInsufienteException;
 
+// FQN = Full Qualified Name -> br.com.bytebank.banco.test.TesteConta 
 public class TesteConta {
 	
 	public static void main(String[] args) {
