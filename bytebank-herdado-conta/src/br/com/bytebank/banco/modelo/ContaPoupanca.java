@@ -14,4 +14,9 @@ public class ContaPoupanca extends Conta {
 			System.out.println("Não é possível realizar deposito de valores negativos");
 		}		
 	}
+	
+	@Override
+	public String toString() {
+		return "ContaPoupanca, " + super.toString();
+	}
 }
