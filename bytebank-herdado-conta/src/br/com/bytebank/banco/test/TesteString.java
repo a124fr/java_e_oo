@@ -9,7 +9,13 @@ public class TesteString {
 		
 		System.out.println(nome);
 		
-		String outro = nome.replace("A", "a");	
+		///String outro = nome.replace("A", "a");
+		//String outro = nome.replace("Em", "eM");
+		
+		char c = 'A';
+		char a = 'a';
+		
+		String outro = nome.replace(c, a);
 		System.out.println(outro);
 		
 		outro = nome.toLowerCase();		
