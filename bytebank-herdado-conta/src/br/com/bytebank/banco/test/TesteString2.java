@@ -7,9 +7,11 @@ public class TesteString2 {
 		String nome = "Alura "; // object literal
 		// String outroNome = new String("Empresa"); -> Má prática
 		
-		String vazio = " ";
-		vazio = vazio.trim();
-		System.out.println(vazio.isEmpty());		
+		System.out.println(nome.contains("Alu"));
+		
+//		String vazio = " ";
+//		vazio = vazio.trim();
+//		System.out.println(vazio.isEmpty());		
 		
 //		System.out.println(nome.length());
 //		
