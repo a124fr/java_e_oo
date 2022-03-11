@@ -1,6 +1,6 @@
 package br.com.bytebank.banco.test;
 
-public class Teste {
+public class TesteArray {
 
 	public static void main(String[] args) {
 		
