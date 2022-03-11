@@ -1,41 +1,33 @@
 package br.com.bytebank.banco.test;
 
-import br.com.bytebank.banco.modelo.Cliente;
-import br.com.bytebank.banco.modelo.Conta;
-import br.com.bytebank.banco.modelo.ContaCorrente;
-import br.com.bytebank.banco.modelo.ContaPoupanca;
-
 public class Teste {
-	
+
 	public static void main(String[] args) {
+				
+		int[] idades2 = new int[] { 1, 2, 3, 4, 5};
 		
-		System.out.println("x");
-		System.out.println(3);
-		System.out.println(true);
+		int[] idades3 = { 1, 22, 39, 4, 7, 9 };
 		
-		println();
-		println(3);
-		println(false);
+		int[] idades = new int[5]; // o array é inicializado com 0
+		idades[0] = 29;
+		idades[1] = 39;
+		idades[2] = 19;
+		idades[3] = 69;
+		idades[4] = 59;
+
+		System.out.println("Percorrendo  array idades");
+		for(int posicao = 0; posicao < idades.length; posicao++) {
+			System.out.println(idades[posicao]);
+		}
 		
-//		ContaCorrente cc = new ContaCorrente(22, 33);
-//		Conta cc = new ContaCorrente(22, 33);
-		Object cc = new ContaCorrente(22, 33);
-		Object cp = new ContaPoupanca(33, 22);
-		Object cliente = new Cliente();
+		System.out.println("Percorrendo array idades2");
+		for(int posicao = 0; posicao < idades2.length; posicao++) {
+			System.out.println(idades2[posicao]);
+		}
 		
-		System.out.println(cc);
-		System.out.println(cp);
-		
-		println(cp);
-		println(cc);
-		println(cliente);
+		System.out.println("Percorrendo array idades3");
+		for(int posicao = 0; posicao < idades3.length; posicao++) {
+			System.out.println(idades3[posicao]);
+		}
 	}
-	
-	static void println() {}
-	
-	static void println(int a) {}
-	
-	static void println(boolean valor) {}
-	
-	static void println(Object referencia) {}
 }
