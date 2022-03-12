@@ -15,7 +15,7 @@ public class TestaArrayList2 {
 		// Problema de utilizar ArrayList não genérico. -> Guarda qualquer referencia, seja uma conta ou cliente ou quqlquer objeto.
 //		Cliente cliente = new Cliente();
 //		lista.add(cliente);
-		// Solução é usar um Lista Genérica do tipo Conta
+		// Solução é usar um Lista Genérica do tipo Conta, onde é especificado o tipo de objeto.
 		ArrayList<Conta> lista = new ArrayList<>();
 		
 		lista.add(new ContaCorrente(22, 11));		
@@ -34,16 +34,14 @@ public class TestaArrayList2 {
 		
 		System.out.println("\nPercorendo Coleções com o For");
 		for(int i = 0; i < lista.size(); i++) {
-			Object oRef = lista.get(i);
-			System.out.println(oRef);
+			Conta conta = lista.get(i);
+			System.out.println(conta);
 		}
 		
 		
 		System.out.println("\nUsando For para Coleções(Foreach)");
-		for(Object objeto : lista) {
-//			Conta c = (Conta)objeto;
-//			System.out.println(c);
-			System.out.println(objeto);
+		for(Conta conta : lista) {
+			System.out.println(conta);
 		}
 	}
 
