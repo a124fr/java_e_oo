@@ -15,7 +15,7 @@ public class TestaArrayList2 {
 		// Problema de utilizar ArrayList não genérico. -> Guarda qualquer referencia, seja uma conta ou cliente ou quqlquer objeto.
 //		Cliente cliente = new Cliente();
 //		lista.add(cliente);
-		// Solução é usar um Lista Genérica
+		// Solução é usar um Lista Genérica do tipo Conta
 		ArrayList<Conta> lista = new ArrayList<>();
 		
 		lista.add(new ContaCorrente(22, 11));		
