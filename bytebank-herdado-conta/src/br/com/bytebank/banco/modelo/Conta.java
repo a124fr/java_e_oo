@@ -107,4 +107,12 @@ public abstract class Conta {
 	public String toString() {
 		return "Número: " + this.getNumero() + ", Agência: " + this.getAgencia();
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		Conta outra = (Conta)obj;
+		
+		return this.numero == outra.numero && 
+				this.agencia == outra.agencia;
+	}
 }
