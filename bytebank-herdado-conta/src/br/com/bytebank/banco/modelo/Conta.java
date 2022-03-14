@@ -6,7 +6,7 @@ package br.com.bytebank.banco.modelo;
  * @author Francisco de Assis
  * 
  */
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
 	protected double saldo;
 	private int agencia;
 	private int numero;
@@ -114,5 +114,10 @@ public abstract class Conta {
 		
 		return this.numero == outra.numero && 
 				this.agencia == outra.agencia;
+	}
+	
+	@Override
+	public int compareTo(Conta outra) {
+		return Double.compare(this.saldo, outra.saldo);
 	}
 }

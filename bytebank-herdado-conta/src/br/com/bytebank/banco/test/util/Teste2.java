@@ -1,6 +1,7 @@
 package br.com.bytebank.banco.test.util;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import br.com.bytebank.banco.modelo.Cliente;
@@ -35,7 +36,6 @@ public class Teste2 {
          cc4.setTitular(clienteCC4);
          cc4.deposita(222.0);
 
-
          List<Conta> lista = new ArrayList<>();
          lista.add(cc1);
          lista.add(cc2);
@@ -53,13 +53,23 @@ public class Teste2 {
 		for(Conta conta : lista) {
 			System.out.println(conta);
 		}
-		
-		TitularDaContaComparator comparador2 = new TitularDaContaComparator();		
-		lista.sort(comparador2);
-		
+						
+		//lista.sort(new TitularDaContaComparator()); // versão 1.8 do java.
+		Collections.sort(lista, new TitularDaContaComparator()); // Antes da versão 1.8 do java.		
+				
 		System.out.println("\nLista Ordenada Por Nome do Titular da Conta");
 		for(Conta conta : lista) {
 			System.out.print(conta);
+			System.out.print(", Saldo: " + conta.getSaldo());
+			System.out.println(", Titular: " + conta.getTitular().getNome());
+		}
+		
+		Collections.sort(lista);// Ordem natural(objeto da lista define ordem natural de comparação).
+		
+		System.out.println("\nLista Ordenada Por Saldo");
+		for(Conta conta : lista) {
+			System.out.print(conta);
+			System.out.print(", Saldo: " + conta.getSaldo());
 			System.out.println(", Titular: " + conta.getTitular().getNome());
 		}
 	}
