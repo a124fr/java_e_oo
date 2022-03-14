@@ -46,6 +46,7 @@ public class TesteOrdenacao2 {
 			System.out.println(conta);
 		}
 		
+		//Function Object -> um objeto que criamos para encapsular uma função ou método.		
 		NumeroDaContaComparator comparador = new NumeroDaContaComparator();
 		lista.sort(comparador);
 		
