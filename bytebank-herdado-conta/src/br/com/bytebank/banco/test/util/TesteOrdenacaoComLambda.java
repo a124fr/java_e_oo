@@ -1,9 +1,9 @@
 package br.com.bytebank.banco.test.util;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
 import br.com.bytebank.banco.modelo.Cliente;
 import br.com.bytebank.banco.modelo.Conta;
@@ -65,10 +65,17 @@ public class TesteOrdenacaoComLambda {
 		
 		lista.sort(comp);
 		
+//		lista.forEach(new Consumer<Conta>() {
+//			@Override
+//			public void accept(Conta c) {
+//				System.out.println(c + ", Titular: " + c.getTitular().getNome());
+//			}			
+//		});
+		
 		System.out.println();
-		for (Conta conta : lista) {
-			System.out.println(conta + ", Titular: " + conta.getTitular().getNome());
-		}
+		
+		// Simplificando
+		lista.forEach(conta -> System.out.println(conta + ", Titular: " + conta.getTitular().getNome()));
 
 	}
 }
