@@ -9,7 +9,7 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-public class Teste2 {
+public class Teste {
 	
 	public static void main(String[] args) {
 		 Conta cc1 = new ContaCorrente(22, 33);
@@ -66,6 +66,10 @@ public class Teste2 {
 		
 		//lista.sort(null);
 		Collections.sort(lista);// Ordem natural(objeto da lista define ordem natural de comparação).
+		/* É a ordem definida pelo próprio elemento da lista.
+		   A classe Conta define o seu próprio critério de ordenação implementando a interface java.lang.Comparable.
+		   Nesse caso não é utilizado nenhum Comparator.
+		 */
 		
 		System.out.println("\nLista Ordenada Por Saldo");
 		for(Conta conta : lista) {
