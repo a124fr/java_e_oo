@@ -64,6 +64,7 @@ public class Teste2 {
 			System.out.println(", Titular: " + conta.getTitular().getNome());
 		}
 		
+		//lista.sort(null);
 		Collections.sort(lista);// Ordem natural(objeto da lista define ordem natural de comparação).
 		
 		System.out.println("\nLista Ordenada Por Saldo");
