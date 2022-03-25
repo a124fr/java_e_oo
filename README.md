@@ -1,1 +1,1 @@
-## Revisando e estudando a tecnologia JAVA
+## Estudando a tecnologia JAVA

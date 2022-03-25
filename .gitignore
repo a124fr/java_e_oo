@@ -49,4 +49,8 @@ bytebank-biblioteca/.classpath
 bytebank-biblioteca/.gitignore
 bytebank-biblioteca/.project
 bytebank-biblioteca/.settings
-
+java-io/bin/
+java-io/.classpath
+java-io/.gitignore
+java-io/.project
+java-io/.settings
