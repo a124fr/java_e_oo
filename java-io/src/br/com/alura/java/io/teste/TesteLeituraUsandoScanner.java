@@ -27,10 +27,14 @@ public class TesteLeituraUsandoScanner {
 //			String valoresFormatado = String.format("%s - %04d-%08d, %15s: %07.2f", 
 //					tipo, agencia, numero, titular, saldo);
 			
-			String valoresFormatado = String.format(new Locale("pt", "BR"),
-					"%s - %04d-%08d, %15s: %07.2f", 
+//			String valoresFormatado = String.format(new Locale("pt", "BR"),
+//					"%s - %04d-%08d, %15s: %07.2f", 
+//					tipo, agencia, numero, titular, saldo);
+//			System.out.println(valoresFormatado);
+			
+			System.out.format(new Locale("pt", "BR"),
+					"%s - %04d-%08d, %15s: %07.2f" + System.lineSeparator(), 
 					tipo, agencia, numero, titular, saldo);
-			System.out.println(valoresFormatado);
 			
 			linhaScanner.close();
 		}					
