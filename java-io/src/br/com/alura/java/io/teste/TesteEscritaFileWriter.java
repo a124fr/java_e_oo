@@ -14,7 +14,7 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.Writer;
 
-public class TesteEscrita2 {
+public class TesteEscritaFileWriter {
 
 	public static void main(String[] args) throws IOException {
 				 
